@@ -17,6 +17,7 @@ class PrebuildsPlugin extends webpack.DefinePlugin {
     const abiType = options.mode + '.abi' + abiVersion;
 
     super({
+      'process.__ep_webpack': 'true',
       'process.__ep_prebuild': JSON.stringify(prebuildType + '/' + abiType),
     });
   }
