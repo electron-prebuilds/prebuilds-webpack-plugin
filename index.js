@@ -18,7 +18,8 @@ class PrebuildsPlugin extends webpack.DefinePlugin {
 
     super({
       'process.__ep_webpack': 'true',
-      'process.__ep_prebuild': JSON.stringify(prebuildType + '/' + abiType + '.node'),
+      'process.__ep_prebuild_napi': JSON.stringify(prebuildType + '/node.napi.node'),
+      'process.__ep_prebuild_abi': JSON.stringify(prebuildType + '/' + abiType + '.node'),
     });
   }
 }
