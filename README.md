@@ -1,4 +1,4 @@
-## @electron-prebuilds/prebuilds-webpack-plugin
+## @electron-prebuilds/webpack-plugin
 
 ### Maintainers
 
